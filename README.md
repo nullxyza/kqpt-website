@@ -9,7 +9,7 @@ Run `python -m http.server 8000` in this directory and visit http://localhost:80
 ## Host with GitHub Pages
 
 1. Create a GitHub repository and upload this project, including `.github/workflows/pages.yml`, or push this checkout to its remote. The workflow runs on `main`; adjust it if using another branch.
-2. In the repository, open **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+2. In the repository, open **Settings → Pages → Build and deployment → Source → GitHub Actions**. This one-time setup is required before the workflow can deploy; if a run fails with `Get Pages site failed` or a 404, select **GitHub Actions** as the source and rerun it.
 3. Push to `main` or manually run **Deploy GitHub Pages** from the Actions tab. The deployment supplies the public URL.
 
 All local asset and page links are relative, so the site works at both a repository subpath and a custom domain. The workflow publishes only the public files.
